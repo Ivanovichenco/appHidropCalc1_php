@@ -12,8 +12,13 @@
             Inicio
           </a>
           <div class="navbar-start  is-hoverable">
-            <a class="navbar-item" href="documentacion.html">
+            <a class="navbar-item" href="../documentacion.html">
               Documentacion
+            </a>
+          </div>
+          <div class="navbar-start  is-hoverable">
+            <a class="navbar-item" href="../app/consulta.php">
+              Consulta
             </a>
           </div>
         </div>

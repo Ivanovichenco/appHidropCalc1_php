@@ -1,5 +1,5 @@
 <?php
-
+$time_init = microtime(true);
 require_once ('calculoSales.php');
 
 /*
@@ -59,6 +59,8 @@ echo "Clorarto de potasio: $s5  gramos<br>";
 echo "</div>";
 
 
-
+$time_end=microtime(true);
+$time= $time_end - $time_init;
+echo "tiempo de proceso: $time";
 
 ?>

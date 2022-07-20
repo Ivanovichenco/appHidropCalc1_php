@@ -1,4 +1,5 @@
 <?php
+$time_init = microtime(true);
 /* Creamos las funciones que calculan el volumen de 
  una solución full de nutrientes par cada cultivo. La concentracion full
 se aplica cuando las plantas tiene un mes de transplantadas.
@@ -72,7 +73,9 @@ function pesoSalesAcelga($volumenLitros, &$nitratoCalcio, &$nitratoPotasio, &$fo
     return pesoSalesAcelga($volumenLitros, $sal1, $sal2, $sal3, $sal4, $sal5);
 };
 
-
+   $time_end=microtime(true);
+   $time= $time_end - $time_init;
+   echo "tiempo de proceso: $time";
 ?>
 
 function pesoSalesBerros($volumenLitros, &$nitratoCalcio, &$nitratoPotasio, &$forfatoMonoAmon, &$sulfatoMagnesio, &$cloratoPotasio)

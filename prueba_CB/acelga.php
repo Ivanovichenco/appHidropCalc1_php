@@ -1,4 +1,5 @@
 <?php
+$time_init = microtime(true);
 if ($_REQUEST['cultivo'] == "acelga") {
     echo "Tipo de cultivo: acelga<br>";
     echo "Número de plantas transplantadas: $cantidadPlantas<br>";
@@ -26,5 +27,7 @@ if ($_REQUEST['cultivo'] == "acelga") {
   echo "El clorarto de potasio: $s5  gramos<br>";
   
    }
-
+   $time_end=microtime(true);
+   $time= $time_end - $time_init;
+   echo "tiempo de proceso: $time";
 ?>

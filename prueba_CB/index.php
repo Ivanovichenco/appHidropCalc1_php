@@ -6,7 +6,7 @@
 
 <body>
   <?php
-
+$time_init = microtime(true);
   /*-- funcion de prueba --*/
  if ($_REQUEST['cultivo'] == "lechuga") {
   echo "elcultivo elegido es lechuga";
@@ -43,7 +43,9 @@ echo "El fosfato de amonio para ". $volumenLitrosAgua . " litros de agua son: " 
 echo "El sulfato de magnesio para " . $volumenLitrosAgua . " litros de agua son: " . $s4 . " gramos<br>";
 echo "El clorarto de potasio para " . $volumenLitrosAgua . " litros de agua son: " . $s5 . " gramos<br>";
   
-   
+$time_end=microtime(true);
+$time= $time_end - $time_init;
+echo "tiempo de proceso: $time";
   ?>
 </body>
 

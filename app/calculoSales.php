@@ -1,25 +1,10 @@
-<!DOCTYPE html>
-<html>
+<?php 
+include "../js/script.php";
+?>
+<?php 
+include "../plantillas/header.php";
+?>
 
-<head>
-  
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hidropcalc1</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  <link rel="stylesheet" type="text/css" href="../css/estilos.css">
-  <script type="text/javascript">
-            function imprimir() {
-                if (window.print) {
-                    window.print();
-                } else {
-                    alert("La función de impresion no esta soportada por su navegador.");
-                }
-            }
-        </script>
-</head>
-
-<body >
   <!-- Header----------------------------------------------------- -->
  
   <?php

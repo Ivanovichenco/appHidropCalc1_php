@@ -6,7 +6,7 @@
 
 
 <?php
-
+$time_init = microtime(true);
 $volumenLitrosAgua= 200;
 $salesCultivoLechuga = [
   'nitratoCalcio' => 1.2,
@@ -34,3 +34,9 @@ echo "<br>";
 foreach ($salesCultivoLechuga as $sal => $valor) {
   echo $sal . ": " . ($valor*$volumenLitrosAgua)."<br>";
 }
+
+$time_end=microtime(true);
+$time= $time_end - $time_init;
+echo "tiempo de proceso: $time";
+   
+?>

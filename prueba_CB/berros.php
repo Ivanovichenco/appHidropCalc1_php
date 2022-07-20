@@ -1,6 +1,6 @@
 <?php
 echo "Hello desde berros";
-
+$time_init = microtime(true);
     echo "Tipo de cultivo: Berros<br>";
     echo "Número de plantas transplantadas: $cantidadPlantas<br>";
     echo "Fecha de pransplante: $fechatranplante <br>";
@@ -26,5 +26,7 @@ echo "Hello desde berros";
   echo "El sulfato de magnesio: $s4 gramos<br>";
   echo "El clorarto de potasio: $s5  gramos<br>";
   
- 
+  $time_end=microtime(true);
+  $time= $time_end - $time_init;
+  echo "tiempo de proceso: $time";
 ?>
