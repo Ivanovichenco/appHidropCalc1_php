@@ -1,18 +1,12 @@
 <?php
-  $conexion = mysqli_connect("localhost", "root", "", "hidropcalca1") or
+  $conexion = mysqli_connect("localhost", "root", "1234", "hidropcalc1") or
     die("Problemas con la conexión");
-/*
- $tipo=$_REQUEST['cultivo']
- $volumenLitrosAgua= $_REQUEST['volumenLitrosAgua'];
- $cantidadPlantas= $_REQUEST['cantidadPlantas'];
- $fechatranplante= $_REQUEST['fechatranplante'];
- $numeroBancada = $_REQUEST['bancada'];
-*/
-  mysqli_query($conexion, "insert into Cultivos(tipo,fechaTransplante,cantidadPlantas, formula) values 
-                       ('$tipo',$numeroBancada,'$fechaTransplante',$cantidadPlantas,'$formula' )")
+    $formula= "Lorem ipsum lorem molum";
+  mysqli_query($conexion, "insert into Cultivos(cultivo,bancada,volumenLitrosAgua,cantidadPlantas,fechaTransplante, formula) values 
+                       ('$_REQUEST[cultivo]',$_REQUEST[bancada],$_REQUEST[volumenLitrosAgua],$_REQUEST[cantidadPlantas],'$_REQUEST[fechaTransplante]','$formula')")
     or die("Problemas en el select" . mysqli_error($conexion));
 
   mysqli_close($conexion);
 
-  echo "El alumno fue dado de alta.";
+  echo "El cultivo fue dado de alta.<br>";
   ?>

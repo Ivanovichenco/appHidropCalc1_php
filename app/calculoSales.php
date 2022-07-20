@@ -45,9 +45,10 @@ A partir del full se calcula el .75full, el .50full y el .25full
  
  $volumenLitrosAgua= $_REQUEST['volumenLitrosAgua'];
  $cantidadPlantas= $_REQUEST['cantidadPlantas'];
- $fechatranplante= $_REQUEST['fechatranplante'];
+ $fechaTransplante= $_REQUEST['fechaTransplante'];
  $numeroBancada = $_REQUEST['bancada'];
- 
+ // Conexion y guardado automatico de los datos del cultivo en la base de datos
+ require_once "../sql/conexion.php";
 //==========================================================================>
 // LECHUGAS
 
@@ -55,13 +56,13 @@ A partir del full se calcula el .75full, el .50full y el .25full
   
   echo "<strong >Tipo de cultivo: lechuga</strong><br>";
   echo "Número de plantas transplantadas: $cantidadPlantas<br>";
-  echo "Fecha de transplante: $fechatranplante <br>";
+  echo "Fecha de transplante: $fechaTransplante <br>";
   echo "En la bancada No: $numeroBancada <br>";
   echo "Cantidad de litros de agua a dosificar: $volumenLitrosAgua <br>";
   
-  echo "<========================================================================>";
+  echo "<hr>";
   echo " <div class='columns content has-text-justified' >";
-  echo " <div class='column ' >";
+  echo " <div class='column '>";
   
   /*Codigo para calcular y mostrar resultados */
    
@@ -75,11 +76,11 @@ if ($_REQUEST['cultivo'] == "berros") {
   
   echo "<strong >Tipo de cultivo: Berros</strong><br>";
   echo "Número de plantas transplantadas: $cantidadPlantas<br>";
-  echo "Fecha de transplante: $fechatranplante <br>";
+  echo "Fecha de transplante: $fechaTransplante <br>";
   echo "En la bancada No: $numeroBancada <br>";
   echo "Cantidad de litros de agua a dosificar: $volumenLitrosAgua <br>";
   
-  echo "<========================================================================>";
+  echo "<hr>";
   echo " <div class='columns content has-text-justified' >";
   echo " <div class='column ' >";
   
@@ -95,11 +96,11 @@ if ($_REQUEST['cultivo'] == "acelgas") {
   
   echo "<strong >Tipo de cultivo: Acelgas</strong><br>";
   echo "Número de plantas transplantadas: $cantidadPlantas<br>";
-  echo "Fecha de transplante: $fechatranplante <br>";
+  echo "Fecha de transplante: $fechaTransplante <br>";
   echo "En la bancada No: $numeroBancada <br>";
   echo "Cantidad de litros de agua a dosificar: $volumenLitrosAgua <br>";
   
-  echo "<========================================================================>";
+  echo "<hr>";
   echo " <div class='columns content has-text-justified' >";
   echo " <div class='column ' >";
   

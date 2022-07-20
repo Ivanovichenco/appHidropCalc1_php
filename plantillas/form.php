@@ -52,7 +52,7 @@
       <div class="field">
         <label class="label">Fecha de Transplante</label>
         <div class="control">
-          <input class="input is-success" name="fechatranplante" type="date" placeholder="dd/mm/aaaa" required>
+          <input class="input is-success" name="fechaTransplante" type="date" placeholder="dd/mm/aaaa" required>
         </div>
       </div>
       <div class="field">
