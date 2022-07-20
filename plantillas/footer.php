@@ -1,4 +1,5 @@
 <!-- Footer----------------------------------------------------- -->
+</div>
 <footer class="footer hero is-success">
     <div class="content has-text-centered">
       <p>

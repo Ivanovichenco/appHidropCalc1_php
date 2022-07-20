@@ -6,7 +6,7 @@ include "../plantillas/header.php";
 ?>
 
   <!-- Header----------------------------------------------------- -->
- 
+  <div class="bg-img">
   <?php
   include_once "../plantillas/navbar2.php";
  ?>
@@ -100,7 +100,7 @@ if ($_REQUEST['cultivo'] == "acelgas") {
 //==========================================================================>
 echo"</div>";
 echo"</div>";
-
+echo"</div>";
 ?>
 
 
